@@ -1,0 +1,6 @@
+/home/edo/Prog/java/android/projects/BluetoothControl/Application/build/intermediates/classes/debug
+/home/edo/Prog/java/android/projects/BluetoothControl/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-17b910e577448a40b0dcd752489fd11ee6014228.jar
+/home/edo/Prog/java/android/projects/BluetoothControl/Application/build/intermediates/pre-dexed/debug/classes-02a6f3b09a9c6ff8d27545447f001f57d5e0ed92.jar
+/home/edo/Prog/java/android/projects/BluetoothControl/Application/build/intermediates/pre-dexed/debug/classes-0dd5c5b7a842597ac1029d7cd7ee1add06be49c1.jar
+/home/edo/Prog/java/android/projects/BluetoothControl/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-8c3cf161b21a2b0bf3e50d96bb368d6a37bcfd46.jar
+/home/edo/Prog/java/android/projects/BluetoothControl/Application/build/intermediates/pre-dexed/debug/classes-ffc8d1d5fa36e736865b6939cd377f98b6d8f9ad.jar

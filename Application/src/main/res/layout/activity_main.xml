@@ -1,0 +1,125 @@
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/sample_main_layout"
+
+      android:descendantFocusability="beforeDescendants"
+      android:focusableInTouchMode="true">
+
+    <ViewAnimator
+          android:id="@+id/sample_output"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+        android:measureAllChildren="false"
+        android:minHeight="220px">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_led"
+                    android:id="@+id/button_led"
+                    android:onClick="onButtonLedClicked" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_acc"
+                    android:id="@+id/button_acc"
+                    android:onClick="onButtonAccClicked" />
+
+                <EditText
+                    android:layout_width="80px"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/edit_text_threshold"
+                    android:layout_column="2"
+                    android:editable="true"
+                    android:numeric="integer"
+                    android:text="200" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_rotate_counterclockwise"
+                    android:id="@+id/button_rotate_counterclockwise"
+                    android:layout_column="0"
+                    android:onClick="onButtonRotateCounterclockwiseClicked"
+                    android:nestedScrollingEnabled="true" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_rotate_clockwise"
+                    android:id="@+id/button_rotate_clockwise"
+                    android:layout_column="1"
+                    android:onClick="onButtonRotateClockwiseClicked" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_stop"
+                    android:id="@+id/button_stop"
+                    android:layout_column="2"
+                    android:onClick="onButtonStopClicked" />
+            </TableRow>
+        </TableLayout>
+
+        <fragment
+              android:name="com.example.android.common.logger.LogFragment"
+              android:id="@+id/log_fragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+
+    </ViewAnimator>
+
+    <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@android:color/darker_gray" />
+
+    <FrameLayout
+          android:id="@+id/sample_content_fragment"
+          android:layout_weight="2"
+          android:layout_width="match_parent"
+          android:layout_height="0px" />
+
+</LinearLayout>
+
